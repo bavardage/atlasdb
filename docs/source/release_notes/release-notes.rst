@@ -31,6 +31,22 @@ Changelog
 .. <<<<------------------------------------------------------------------------------------------------------------->>>>
 
 =======
+v0.18.0
+=======
+
+.. list-table::
+    :widths: 5 40
+    :header-rows: 1
+
+    *    - Type
+         - Change
+
+    *    - |changed|
+         - The SQL connection manager will no longer temporarily increase the pool size by eleven
+           connections when the pool is exhausted.
+           (`Pull Request <https://github.com/palantir/atlasdb/pull/971>`__)
+
+=======
 v0.17.0
 =======
 
