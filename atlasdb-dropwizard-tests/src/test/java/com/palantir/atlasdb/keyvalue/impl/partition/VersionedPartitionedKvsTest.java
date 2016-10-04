@@ -400,7 +400,7 @@ public class VersionedPartitionedKvsTest extends AbstractAtlasDbKeyValueServiceT
         assertEquals(2, Iterators.size(it));
     }
 
-    @Test
+    @Test(timeout = 120000)
     public void testMultiRangeWithHistoryIteratorRetryTransparentlyOnVersionMismatch() throws Exception {
         // This tests that the put function will block for long enough.
         for (int i=0; i<25; ++i) {
