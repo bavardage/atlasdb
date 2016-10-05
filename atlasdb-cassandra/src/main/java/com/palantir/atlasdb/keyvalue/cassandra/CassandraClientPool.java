@@ -150,6 +150,7 @@ public class CassandraClientPool {
             }
         }, config.poolRefreshIntervalSeconds(), config.poolRefreshIntervalSeconds(), TimeUnit.SECONDS);
 
+        runOneTimeStartupChecks();
         refreshPool(); // ensure we've initialized before returning
     }
 
